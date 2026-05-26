@@ -1,4 +1,4 @@
-# Holy Dex — DEX Creator Template
+# FrostDex — DEX Creator Template
 
 A customizable Decentralized Exchange (DEX) frontend built on the Orderly Network SDK. Provides trading, portfolio management, markets, leaderboards, rewards, vaults, and swap functionality.
 
