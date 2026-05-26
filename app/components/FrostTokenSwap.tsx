@@ -1,11 +1,25 @@
 import { FROST_TOKEN } from "@/utils/customTokens";
 
+const DEXSCREENER_EMBED = `https://dexscreener.com/arbitrum/${FROST_TOKEN.poolAddress}?embed=1&theme=dark&trades=0&info=0`;
+
 export default function FrostTokenSwap() {
   const shortAddress = `${FROST_TOKEN.address.slice(0, 6)}...${FROST_TOKEN.address.slice(-4)}`;
   const poolShort = `${FROST_TOKEN.poolAddress!.slice(0, 6)}...${FROST_TOKEN.poolAddress!.slice(-4)}`;
 
   return (
-    <div className="w-full max-w-lg mx-auto flex flex-col gap-4">
+    <div className="w-full max-w-2xl mx-auto flex flex-col gap-4">
+      <div
+        className="rounded-xl border overflow-hidden"
+        style={{ borderColor: "rgba(var(--oui-color-primary), 0.25)" }}
+      >
+        <iframe
+          src={DEXSCREENER_EMBED}
+          style={{ width: "100%", height: "400px", border: "none" }}
+          title="FROST/WETH Price Chart"
+          allow="clipboard-write"
+        />
+      </div>
+
       <div
         className="rounded-xl border p-5 flex flex-col gap-4"
         style={{
@@ -103,7 +117,7 @@ export default function FrostTokenSwap() {
             color: "rgb(var(--oui-color-base-1))",
           }}
         >
-          Swap FROST / USDC on Uniswap ↗
+          Swap FROST / WETH on Uniswap ↗
         </a>
 
         <p className="text-xs text-center" style={{ color: "rgba(var(--oui-color-base-foreground), 0.4)" }}>
