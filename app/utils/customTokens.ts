@@ -19,9 +19,9 @@ export const CUSTOM_TOKENS: CustomToken[] = [
     chainId: 42161,
     logoURI: "",
     poolAddress: "0x4bec5199b83ad5a616f81927cabb8bfd7a41c652",
-    pairWith: "USDC",
+    pairWith: "WETH",
     uniswapPoolUrl:
-      "https://app.uniswap.org/swap?inputCurrency=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&outputCurrency=0x80A98400b405Fcba615952c3201869E5C4Ca3BC6&chain=arbitrum",
+      "https://app.uniswap.org/swap?inputCurrency=0x82aF49447D8a07e3bd95BD0d56f35241523fBab1&outputCurrency=0x80A98400b405Fcba615952c3201869E5C4Ca3BC6&chain=arbitrum",
   },
 ];
 
